@@ -45,25 +45,123 @@ Meh, nada de otro mundo...
 
 * *Vamos despacito*
 [[./imagenes/Despacito.jpg]]
-* *Aspectos generales*
-** *Emacs*
--done Interfaz :: Distinguir los principales elementos de la interfaz, saber moverse
-              entre ventanas y buffers
--done Shortcuts :: Entender como funcionan los comandos en emacs y como se realizan
-               las operaciones basicas del dia a dia
--done Buffers :: Entender que es un buffer, para que se usan y para que no.
-- Paquetes :: Primera toma en contacto con los paquetes de emacs, como se
-              instalan y como se configuran dentro de tu init
-- Melpa :: Que es melpa, como se usa y que paquetes tiene
-- Precompilado y evaluacion :: Que es y para que sirve
-- Elisp :: Entender lo basico de elisp para poder configurar los paquetes ya
-           instalados
-- Customizacion :: Paquetes utiles para tu dia a dia
 
-  1. Org-mode
-  2. Magit
-  3. Autocomplete
-  4. Helm
-  5. Autoindent
-  6. ...
-- A&Q :: Preguntas y respuestas, que quieren hacer con emacs
+* *Por qué deberia aprender emacs??*
+Emacs, SublimeText, Vim, Notepad++, Gedit, Nano... \\
+Hay demasiados!!\\
+[[./imagenes/Crazy.gif]]
+** *Es Personalizable 110%*
+#+ATTR_REVEAL: :frag highlight-green
+- Colores
+- Indentaciones
+- Modos
+- Macros
+- Y la lista sigue...
+** *Tiene infinidad de herramientas*
+MELPA con 2.984 paquetes es el repositorio mas grande de paquetes para
+emacs. Seguido por repositorios como marmalade y savannah
+** *Una buena comunidad*
+Paquetes importantes actualizados de forma periodica por la comunidad.
+** *Si no encuentras una funcionalidad... IMPLEMENTALA!*
+[[./imagenes/FSF.png]]\\
+Si aun asi no has encontrado lo que tu buscas... crealo tu mismo.
+
+* *Modos*
+Emmm modos... si... eso me suena
+** *Que es un modo?*
+Un modo define el comportamiento de emacs en un entorno de trabajo determinado
+\\
+[[./imagenes/jsMode.png]] \\
+[[./imagenes/htmlMode.png]] \\
+[[./imagenes/HaskellMode.png]] \\
+
+** *Modos mayores*
+Un modo mayor determina una preconfiguracion para un tipo determinado de archivo
+dentro de emacs.\\
+[[./imagenes/MayorMode.png]]
+- Son incompatibles entre si
+- Reconocimiento de sintaxis
+- Binding de teclas
+
+** *Modos menores*
+Un modo menor es una utilidad especifica que activas para cada modo. A
+diferencia de los modos mayores, los modos menores son compatibles entre si.
+
+* *Paquetes*
+Emacs ofrece la posibilidad de instalar funcionalidades extra en forma de
+paquetes mediante un gestor de paquetes o bien descargando el codigo fuente e
+importarlo en el archivo de configuracion.
+
+** *MELPA, marmalade y toda esa vaina*
+Chorrocientosmil paquetes y todos con cosicas bonicas. Necesita, busca,
+encuentra y usa. Es la forma mas efectiva de aprender.
+
+** *Chachi, ya se cual quiero. Ahora que?*
+Supongamos que queremos instalar autoindent. Para ello tenemos varias opciones
+
+** *Mediante el gestor de paquetes (Lento)*
+#+ATTR_REVEAL: :frag (appear)
+- M-x
+- package-refresh-contents
+- M-x
+- package-list-packages
+- Seleccionamos el/los paquete/s con I
+- Instalamos los paquetes seleccionados con x
+- Configurar el paquete en el archivo de configuracion
+** *Mediante el gestor de paquetes (Rapido)*
+#+ATTR_REVEAL: :frag (appear)
+- M-x
+- package-install
+- org-mode
+- Configurar el paquete en el archivo de configuracion
+
+** *Mediante el codigo fuente*
+ Depende del paquete a instalar habra mas o menos pasos, pero grosso modo:
+#+ATTR_REVEAL: :frag (roll-in)
+- Descargar el codigo fuente (org-mode.el)
+- Se recomienda mover a un subdirectorio del path ./emacs.d/
+- Cargar el paquete en el init.el
+
+* *Configuracion de emacs*
+Al arrancar emacs carga el archivo /emacs.d/init.el como archivo de
+configuracion. En este archivo se pueden cargar otros archivos de configuracion
+secundarios para poder tenerlo modularizado.
+Para poder recargar la configuracion una vez guardada, se usa el comando M-x
+eval-buffer
+
+* *Paquetes de interes*
+** *Org-mode*
+[[http://orgmode.org/]]
+** *Magit*
+https://github.com/magit/magit
+** *Autocomplete*
+https://www.emacswiki.org/emacs/AutoComplete
+** *Helm*
+https://github.com/emacs-helm/helm
+** *Autoindent*
+https://www.emacswiki.org/emacs/AutoIndentation
+** *Cheatsheet*
+https://github.com/darksmile/cheatsheet
+** *Camcorder*
+https://github.com/Malabarba/camcorder.el
+** *Restclient*
+https://github.com/pashky/restclient.el
+** *Flycheck*
+https://github.com/flycheck/flycheck
+** *Yasnippet*
+https://www.emacswiki.org/emacs/Yasnippet
+** *Helm*
+https://github.com/emacs-helm/helm
+** *Smex*
+https://www.emacswiki.org/emacs/Smex
+** *Rainbow delimiters*
+https://www.emacswiki.org/emacs/RainbowDelimiters
+
+* *Taller: Configurar emacs*
+- Crear archivo init.el
+- Sincronizar emacs con los repositorios de MELPA
+- Instalar uno o varios paquetes
+- Configurar todo lo instalado y familiarizarse
+
+* *Muchas gracias por venir*
+** *C-c C-h*
