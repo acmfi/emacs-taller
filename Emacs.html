@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Charla Emacs</title>
+<meta name="author" content="(Coyote3007 & Nacho)"/>
+<link rel="stylesheet" href="file:/home/coyote3007/.emacs.d/reveal.js-master/css/reveal.css"/>
+<link rel="stylesheet" href="file:/home/coyote3007/.emacs.d/reveal.js-master/css/theme/league.css" id="theme"/>
+<link rel="stylesheet" href="./acm.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:/home/coyote3007/.emacs.d/reveal.js-master/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="EmacsFTW.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>Charla Emacs</h1>
+<h2>Coyote3007 &amp; Nacho</h2>
+<h2><a href="mailto:SexyACM@BestAsocEUW.io">SexyACM@BestAsocEUW.io</a></h2>
+<h2></h2>
+</section>
+
+<section>
+<section id="slide-orgheadline1">
+<h2 id="orgheadline1"><b>Prefurcia</b></h2>
+<p>
+Todo lo aqui expuesto esta creado usando emacs como herramienta principal (Much
+powerfull)
+<a href="http://nwidger.github.io/blog/post/making-a-reveal.js-presentation-with-org-reveal/">Tutorial usado para crear esta presentacion</a>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline4">
+<h2 id="orgheadline4"><b>At first I was like</b></h2>
+<p>
+<img src="./imagenes/EmacsNoConfig.png" alt="EmacsNoConfig.png" />
+Meh, nada de otro mundo&#x2026;
+</p>
+</section>
+<section id="slide-orgheadline2">
+<h3 id="orgheadline2"><b>But then &#x2026;</b></h3>
+
+<div class="figure">
+<p><img src="./imagenes/BufferVacio.png" alt="BufferVacio.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline3">
+<h3 id="orgheadline3"><b>My power increased</b></h3>
+
+<div class="figure">
+<p><img src="./imagenes/BufferFTW.png" alt="BufferFTW.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline5">
+<h2 id="orgheadline5"><b>Vamos despacito</b></h2>
+
+<div class="figure">
+<p><img src="./imagenes/Despacito.jpg" alt="Despacito.jpg" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline7">
+<h2 id="orgheadline7"><b>Aspectos generales</b></h2>
+<div class="outline-text-2" id="text-orgheadline7">
+</div></section>
+<section id="slide-orgheadline6">
+<h3 id="orgheadline6"><b>Emacs</b></h3>
+<p>
+-done Interfaz :: Distinguir los principales elementos de la interfaz, saber moverse
+              entre ventanas y buffers
+-done Shortcuts :: Entender como funcionan los comandos en emacs y como se realizan
+               las operaciones basicas del dia a dia
+-done Buffers :: Entender que es un buffer, para que se usan y para que no.
+</p>
+<dl>
+<dt>Paquetes</dt><dd>Primera toma en contacto con los paquetes de emacs, como se
+instalan y como se configuran dentro de tu init</dd>
+<dt>Melpa</dt><dd>Que es melpa, como se usa y que paquetes tiene</dd>
+<dt>Precompilado y evaluacion</dt><dd>Que es y para que sirve</dd>
+<dt>Elisp</dt><dd>Entender lo basico de elisp para poder configurar los paquetes ya
+instalados</dd>
+<dt>Customizacion</dt><dd>Paquetes utiles para tu dia a dia
+
+<ol>
+<li>Org-mode</li>
+<li>Magit</li>
+<li>Autocomplete</li>
+<li>Helm</li>
+<li>Autoindent</li>
+<li>&#x2026;</li>
+
+</ol></dd>
+<dt>A&amp;Q</dt><dd>Preguntas y respuestas, que quieren hacer con emacs</dd>
+
+</dl>
+</section>
+</section>
+</div>
+</div>
+<script src="file:/home/coyote3007/.emacs.d/reveal.js-master/lib/js/head.min.js"></script>
+<script src="file:/home/coyote3007/.emacs.d/reveal.js-master/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: true,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+{ src: './acm.js', async: true },
+ { src: 'file:/home/coyote3007/.emacs.d/reveal.js-master/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:/home/coyote3007/.emacs.d/reveal.js-master/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:/home/coyote3007/.emacs.d/reveal.js-master/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:/home/coyote3007/.emacs.d/reveal.js-master/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '', async: true },
+ { src: 'file:/home/coyote3007/.emacs.d/reveal.js-master/plugin/multiplex/master.js', async: true },
+ { src: 'file:/home/coyote3007/.emacs.d/reveal.js-master/lib/js/classList.js', condition: function() { return !document.body.classList; } }]
+});
+</script>
+</body>
+</html>

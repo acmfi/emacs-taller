@@ -1,0 +1,61 @@
+En mi caso, las teclas de función son Ctrl(C) y Alt(M).
+
+--------------- Mover por páginas ---------------
+| Combinacion | Efecto                                         |
+|-------------+------------------------------------------------|
+| C-v         | Siguiente                                      |
+| A-v         | Anterior                                       |
+
+--------------- Moverse entre el texto ---------------
+| Combinacion | Efecto                             |
+|-------------+------------------------------------|
+| C-f         | Moverse un caracter hacia adelante |
+| C-b         | Moverse un caracter hacia atrás    |
+| M-f         | Moverse una palabra hacia adelante |
+| M-b         | Moverse una palabra hacia atrás    |
+| C-n         | Moverse a la siguiente línea       |
+| C-p         | Moverse a la línea anterior        |
+| C-a         | Moverse al comienzo de una líneas   |
+| C-e         | Moverse al final de una línea      |
+| M-a         | Moverse al inicio de una oracion   |
+| M-e         | Moverse al final de una oracion    |
+
+
+----------------- Alterando el texto -----------------
+| Combinacion | Efecto                                             |
+|-------------+----------------------------------------------------|
+| C-k         | "mata" el texto, pero puede ser recuperado con C-y |
+| C-d         | Borra un caracter (no puede ser recuperado)        |
+| M-d         | Borra una plabra                                   |
+| C-Spa       | Marca el texto                                     |
+| C-w         | Corta el texto seleccionado                        |
+| M-w         | Copia el texto seleccionado                        |
+| C-h         | Marca todo el buffer                               |
+| C-y         | Pega el texto copiado                              |
+| M-y         | Recorre los textos copiados/pegados                |
+| C-g         | Cancelar comando                                   |
+| C-x-u       | Deshacer                                           |
+| C-/         | Deshacer                                           |
+
+
+
+-------------------------  C-x's  ------------------
+| Combinacion | Efecto                                  |
+|-------------+-----------------------------------------|
+| C-x C-f     | Abrir/crear un archvo                   |
+| C-x C-b     | Listar Buffers                          |
+| C-x-k       | Cerrar el buffer                        |
+| C-x C-s     | Guardar un archivo                      |
+| C-x-s       | Guardar Buffers                         |
+| C-x C-c     | Salir de Emacs                          |
+| C-z         | Suspende la sesion de Emacs             |
+| M-x         | Abir Comandos                           |
+| C-s         | Buscar string (Hacia delante)           |
+| C-r         | Buscar string (Hacia detras)            |
+| M-%         | Reemplazar string                       |
+| C-x-2       | Dividir la ventana en 2 (Horizontal)    |
+| C-x-3       | Dividir la ventana en 2 (Vertical)      |
+| C-x-1       | Ventana unica                           |
+| C-x-o       | Cambiar el cursor de una ventana a otra |
+
+[[http://www.ast.cam.ac.uk/~vasily/idl/emacs_commands_list.html][Lista completa]]
