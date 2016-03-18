@@ -1,27 +1,32 @@
-#+Title: Charla Haskell
-#+Author: Coyote3007 & Nacho
+#+Title: Charla Emacs
+#+Author: Coyote3007 & Nacho(x2)
 #+Email:SexyACM@BestAsocEUW.io
+#+LANGUAGE: es
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.5.1 (Org mode 8.3.2)
+#+LATEX_CLASS_OPTIONS: [a4paper,hidelinks]
+#+LATEX_CLASS_OPTIONS: [...,hidelinks]
 
-#+OPTIONS: toc:3
-#+OPTIONS: texht:t
-#+LATEX_CLASS:article
-#+LATEX_CLASS_OPTIONS:[a4paper]
-#+BEGIN_LaTeX
-\newpage
-#+END_laTex
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t
+#+OPTIONS: reveal_rolling_links:nil reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_slide_number:h/v
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: linear
+#+REVEAL_THEME: league
+#+REVEAL_HLEVEL: 1
+#+REVEAL_EXTRA_CSS: ./acm.css
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="EmacsFTW.">
+#+REVEAL_PLUGINS: (markdown notes zoom multiplex classList)
+#+REVEAL_EXTRA_JS: { src: './acm.js', async: true }
 
-* *Aspectos generales*
-** *Haskell*
-- Inicio :: Bases de la programacion funcional, cosas qque se pueden hacer y no
-            se pueden hacer, para que es bueno y para que no
-- Intro :: Introduccion a haskell, en que se basa, un poco de historia y puesta
-           a punto.
-- Sintaxis :: Sintaxis de las funciones y operadores basicos
-- Listas :: Listas...
-- Tipos y clases de tipos :: Introduccion a teoria de tipos y por que los tipos
-     masmolan en haskell :D
-- Recursividad :: Uso de la recursividad, lo que mola y en lo que te ayuda para
-                  dominar el mundo
-- Funciones de alto orden :: las lambda functions son tus hamijas
-- Modulos :: carga de modulos y uso de los mas importantes
-* *Haskell*
+#+OPTIONS: toc:nil
+# #+OPTIONS: reveal_single_file:t
+
+# Read: https://github.com/yjwen/org-reveal/
+# s para modo por
+
+* *WUTISDIS??*
