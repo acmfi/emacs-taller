@@ -4,16 +4,20 @@
 <meta charset="utf-8"/>
 <title>Charla Emacs</title>
 <meta name="author" content="(Coyote3007 & Nacho)"/>
-<link rel="stylesheet" href="./revealjs/css/reveal.css"/>
-<link rel="stylesheet" href="./revealjs/css/theme/league.css" id="theme"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///home/ignaciobll/reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="file:///home/ignaciobll/reveal.js/css/theme/league.css" id="theme"/>
 <link rel="stylesheet" href="./acm.css"/>
+
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
     if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = './revealjs/css/print/pdf.css';
+        link.href = 'file:///home/ignaciobll/reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -74,49 +78,280 @@ Meh, nada de otro mundo&#x2026;
 <p><img src="./imagenes/Despacito.jpg" alt="Despacito.jpg" />
 </p>
 </div>
+
 </section>
 </section>
 <section>
-<section id="slide-orgheadline7">
-<h2 id="orgheadline7"><b>Aspectos generales</b></h2>
-<div class="outline-text-2" id="text-orgheadline7">
-</div></section>
-<section id="slide-orgheadline6">
-<h3 id="orgheadline6"><b>Emacs</b></h3>
+<section id="slide-orgheadline10">
+<h2 id="orgheadline10"><b>Por qué deberia aprender emacs??</b></h2>
 <p>
--done Interfaz :: Distinguir los principales elementos de la interfaz, saber moverse
-              entre ventanas y buffers
--done Shortcuts :: Entender como funcionan los comandos en emacs y como se realizan
-               las operaciones basicas del dia a dia
--done Buffers :: Entender que es un buffer, para que se usan y para que no.
+Emacs, SublimeText, Vim, Notepad++, Gedit, Nano&#x2026; <br  />
+Hay demasiados!!<br  />
+<img src="./imagenes/Crazy.gif" alt="Crazy.gif" />
 </p>
-<dl>
-<dt>Paquetes</dt><dd>Primera toma en contacto con los paquetes de emacs, como se
-instalan y como se configuran dentro de tu init</dd>
-<dt>Melpa</dt><dd>Que es melpa, como se usa y que paquetes tiene</dd>
-<dt>Precompilado y evaluacion</dt><dd>Que es y para que sirve</dd>
-<dt>Elisp</dt><dd>Entender lo basico de elisp para poder configurar los paquetes ya
-instalados</dd>
-<dt>Customizacion</dt><dd>Paquetes utiles para tu dia a dia
+</section>
+<section id="slide-orgheadline6">
+<h3 id="orgheadline6"><b>Es Personalizable 110%</b></h3>
+<ul class="fragment highlight-green">
+<li>Colores</li>
+<li>Indentaciones</li>
+<li>Modos</li>
+<li>Macros</li>
+<li>Y la lista sigue&#x2026;</li>
 
-<ol>
-<li>Org-mode</li>
-<li>Magit</li>
-<li>Autocomplete</li>
-<li>Helm</li>
-<li>Autoindent</li>
-<li>&#x2026;</li>
+</ul>
+</section>
+<section id="slide-orgheadline7">
+<h3 id="orgheadline7"><b>Tiene infinidad de herramientas</b></h3>
+<p>
+MELPA con 2.984 paquetes es el repositorio mas grande de paquetes para
+emacs. Seguido por repositorios como marmalade y savannah
+</p>
+</section>
+<section id="slide-orgheadline8">
+<h3 id="orgheadline8"><b>Una buena comunidad</b></h3>
+<p>
+Paquetes importantes actualizados de forma periodica por la comunidad.
+</p>
+</section>
+<section id="slide-orgheadline9">
+<h3 id="orgheadline9"><b>Si no encuentras una funcionalidad&#x2026; IMPLEMENTALA!</b></h3>
+<p>
+<img src="./imagenes/FSF.png" alt="FSF.png" /><br  />
+Si aun asi no has encontrado lo que tu buscas&#x2026; crealo tu mismo.
+</p>
 
-</ol></dd>
-<dt>A&amp;Q</dt><dd>Preguntas y respuestas, que quieren hacer con emacs</dd>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline14">
+<h2 id="orgheadline14"><b>Modos</b></h2>
+<p>
+Emmm modos&#x2026; si&#x2026; eso me suena
+</p>
+</section>
+<section id="slide-orgheadline11">
+<h3 id="orgheadline11"><b>Que es un modo?</b></h3>
+<p>
+Un modo define el comportamiento de emacs en un entorno de trabajo determinado
+<br  />
+<img src="./imagenes/jsMode.png" alt="jsMode.png" /> <br  />
+<img src="./imagenes/htmlMode.png" alt="htmlMode.png" /> <br  />
+<img src="./imagenes/HaskellMode.png" alt="HaskellMode.png" /> <br  />
+</p>
 
-</dl>
+</section>
+<section id="slide-orgheadline12">
+<h3 id="orgheadline12"><b>Modos mayores</b></h3>
+<p>
+Un modo mayor determina una preconfiguracion para un tipo determinado de archivo
+dentro de emacs.<br  />
+<img src="./imagenes/MayorMode.png" alt="MayorMode.png" />
+</p>
+<ul>
+<li>Son incompatibles entre si</li>
+<li>Reconocimiento de sintaxis</li>
+<li>Binding de teclas</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline13">
+<h3 id="orgheadline13"><b>Modos menores</b></h3>
+<p>
+Un modo menor es una utilidad especifica que activas para cada modo. A
+diferencia de los modos mayores, los modos menores son compatibles entre si.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline20">
+<h2 id="orgheadline20"><b>Paquetes</b></h2>
+<p>
+Emacs ofrece la posibilidad de instalar funcionalidades extra en forma de
+paquetes mediante un gestor de paquetes o bien descargando el codigo fuente e
+importarlo en el archivo de configuracion.
+</p>
+
+</section>
+<section id="slide-orgheadline15">
+<h3 id="orgheadline15"><b>MELPA, marmalade y toda esa vaina</b></h3>
+<p>
+Chorrocientosmil paquetes y todos con cosicas bonicas. Necesita, busca,
+encuentra y usa. Es la forma mas efectiva de aprender.
+</p>
+
+</section>
+<section id="slide-orgheadline16">
+<h3 id="orgheadline16"><b>Chachi, ya se cual quiero. Ahora que?</b></h3>
+<p>
+Supongamos que queremos instalar autoindent. Para ello tenemos varias opciones
+</p>
+
+</section>
+<section id="slide-orgheadline17">
+<h3 id="orgheadline17"><b>Mediante el gestor de paquetes (Lento)</b></h3>
+<ul>
+<li class="fragment appear">M-x</li>
+<li class="fragment appear">package-refresh-contents</li>
+<li class="fragment appear">M-x</li>
+<li class="fragment appear">package-list-packages</li>
+<li class="fragment appear">Seleccionamos el/los paquete/s con I</li>
+<li class="fragment appear">Instalamos los paquetes seleccionados con x</li>
+<li class="fragment appear">Configurar el paquete en el archivo de configuracion</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline18">
+<h3 id="orgheadline18"><b>Mediante el gestor de paquetes (Rapido)</b></h3>
+<ul>
+<li class="fragment appear">M-x</li>
+<li class="fragment appear">package-install</li>
+<li class="fragment appear">org-mode</li>
+<li class="fragment appear">Configurar el paquete en el archivo de configuracion</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline19">
+<h3 id="orgheadline19"><b>Mediante el codigo fuente</b></h3>
+<p>
+Depende del paquete a instalar habra mas o menos pasos, pero grosso modo:
+</p>
+<ul>
+<li class="fragment roll-in">Descargar el codigo fuente (org-mode.el)</li>
+<li class="fragment roll-in">Se recomienda mover a un subdirectorio del path ./emacs.d/</li>
+<li class="fragment roll-in">Cargar el paquete en el init.el</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline21">
+<h2 id="orgheadline21"><b>Configuracion de emacs</b></h2>
+<p>
+Al arrancar emacs carga el archivo /emacs.d/init.el como archivo de
+configuracion. En este archivo se pueden cargar otros archivos de configuracion
+secundarios para poder tenerlo modularizado.
+Para poder recargar la configuracion una vez guardada, se usa el comando M-x
+eval-buffer
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline35">
+<h2 id="orgheadline35"><b>Paquetes de interes</b></h2>
+<div class="outline-text-2" id="text-orgheadline35">
+</div></section>
+<section id="slide-orgheadline22">
+<h3 id="orgheadline22"><b>Org-mode</b></h3>
+<p>
+<a href="http://orgmode.org/">http://orgmode.org/</a>
+</p>
+</section>
+<section id="slide-orgheadline23">
+<h3 id="orgheadline23"><b>Magit</b></h3>
+<p>
+<a href="https://github.com/magit/magit">https://github.com/magit/magit</a>
+</p>
+</section>
+<section id="slide-orgheadline24">
+<h3 id="orgheadline24"><b>Autocomplete</b></h3>
+<p>
+<a href="https://www.emacswiki.org/emacs/AutoComplete">https://www.emacswiki.org/emacs/AutoComplete</a>
+</p>
+</section>
+<section id="slide-orgheadline25">
+<h3 id="orgheadline25"><b>Helm</b></h3>
+<p>
+<a href="https://github.com/emacs-helm/helm">https://github.com/emacs-helm/helm</a>
+</p>
+</section>
+<section id="slide-orgheadline26">
+<h3 id="orgheadline26"><b>Autoindent</b></h3>
+<p>
+<a href="https://www.emacswiki.org/emacs/AutoIndentation">https://www.emacswiki.org/emacs/AutoIndentation</a>
+</p>
+</section>
+<section id="slide-orgheadline27">
+<h3 id="orgheadline27"><b>Cheatsheet</b></h3>
+<p>
+<a href="https://github.com/darksmile/cheatsheet">https://github.com/darksmile/cheatsheet</a>
+</p>
+</section>
+<section id="slide-orgheadline28">
+<h3 id="orgheadline28"><b>Camcorder</b></h3>
+<p>
+<a href="https://github.com/Malabarba/camcorder.el">https://github.com/Malabarba/camcorder.el</a>
+</p>
+</section>
+<section id="slide-orgheadline29">
+<h3 id="orgheadline29"><b>Restclient</b></h3>
+<p>
+<a href="https://github.com/pashky/restclient.el">https://github.com/pashky/restclient.el</a>
+</p>
+</section>
+<section id="slide-orgheadline30">
+<h3 id="orgheadline30"><b>Flycheck</b></h3>
+<p>
+<a href="https://github.com/flycheck/flycheck">https://github.com/flycheck/flycheck</a>
+</p>
+</section>
+<section id="slide-orgheadline31">
+<h3 id="orgheadline31"><b>Yasnippet</b></h3>
+<p>
+<a href="https://www.emacswiki.org/emacs/Yasnippet">https://www.emacswiki.org/emacs/Yasnippet</a>
+</p>
+</section>
+<section id="slide-orgheadline32">
+<h3 id="orgheadline32"><b>Helm</b></h3>
+<p>
+<a href="https://github.com/emacs-helm/helm">https://github.com/emacs-helm/helm</a>
+</p>
+</section>
+<section id="slide-orgheadline33">
+<h3 id="orgheadline33"><b>Smex</b></h3>
+<p>
+<a href="https://www.emacswiki.org/emacs/Smex">https://www.emacswiki.org/emacs/Smex</a>
+</p>
+</section>
+<section id="slide-orgheadline34">
+<h3 id="orgheadline34"><b>Rainbow delimiters</b></h3>
+<p>
+<a href="https://www.emacswiki.org/emacs/RainbowDelimiters">https://www.emacswiki.org/emacs/RainbowDelimiters</a>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline36">
+<h2 id="orgheadline36"><b>Taller: Configurar emacs</b></h2>
+<ul>
+<li>Crear archivo init.el</li>
+<li>Sincronizar emacs con los repositorios de MELPA</li>
+<li>Instalar uno o varios paquetes</li>
+<li>Configurar todo lo instalado y familiarizarse</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline38">
+<h2 id="orgheadline38"><b>Muchas gracias por venir</b></h2>
+<div class="outline-text-2" id="text-orgheadline38">
+</div></section>
+<section id="slide-orgheadline37">
+<h3 id="orgheadline37"><b>C-c C-h</b></h3>
 </section>
 </section>
 </div>
 </div>
-<script src="./revealjs/lib/js/head.min.js"></script>
-<script src="./revealjs/js/reveal.js"></script>
+<script src="file:///home/ignaciobll/reveal.js/lib/js/head.min.js"></script>
+<script src="file:///home/ignaciobll/reveal.js/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -127,7 +362,7 @@ controls: true,
 progress: true,
 history: true,
 center: true,
-slideNumber: true,
+slideNumber: 'h/v',
 rollingLinks: false,
 keyboard: true,
 overview: true,
@@ -149,13 +384,13 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 { src: './acm.js', async: true },
- { src: './revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: './revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/ignaciobll/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/ignaciobll/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/ignaciobll/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/ignaciobll/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
  { src: '', async: true },
- { src: './revealjs/plugin/multiplex/master.js', async: true },
- { src: './revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } }]
+ { src: 'file:///home/ignaciobll/reveal.js/plugin/multiplex/master.js', async: true },
+ { src: 'file:///home/ignaciobll/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } }]
 });
 </script>
 </body>
