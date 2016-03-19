@@ -39,3 +39,5 @@ flycheck_*.el
 
 # projectiles files
 .projectile
+/Gemfile
+/Gemfile.lock
