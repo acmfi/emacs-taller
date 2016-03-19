@@ -7,8 +7,8 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="./revealjs/css/reveal.css"/>
-<link rel="stylesheet" href="./revealjs/css/theme/league.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/ignaciobll/reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="file:///home/ignaciobll/reveal.js/css/theme/league.css" id="theme"/>
 <link rel="stylesheet" href="./acm.css"/>
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -17,7 +17,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = './revealjs/css/print/pdf.css';
+        link.href = 'file:///home/ignaciobll/reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -350,8 +350,8 @@ eval-buffer
 </section>
 </div>
 </div>
-<script src="./revealjs/lib/js/head.min.js"></script>
-<script src="./revealjs/js/reveal.js"></script>
+<script src="file:///home/ignaciobll/reveal.js/lib/js/head.min.js"></script>
+<script src="file:///home/ignaciobll/reveal.js/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -376,7 +376,7 @@ theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 transitionSpeed: 'default',
 multiplex: {
-    secret: null, // null if client
+    secret: '', // null if client
     id: '', // id, obtained from socket.io server
     url: '' // Location of socket.io server
 },
@@ -384,13 +384,13 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 { src: './acm.js', async: true },
- { src: './revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: './revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/ignaciobll/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/ignaciobll/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/ignaciobll/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/ignaciobll/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
  { src: '', async: true },
- { src: './revealjs/plugin/multiplex/client.js', async: true },
- { src: './revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } }]
+ { src: 'file:///home/ignaciobll/reveal.js/plugin/multiplex/master.js', async: true },
+ { src: 'file:///home/ignaciobll/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } }]
 });
 </script>
 </body>
