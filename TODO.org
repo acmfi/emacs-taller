@@ -2,9 +2,16 @@
 [[http://img.irtve.es/imagenes/richard-stallman-ataviado-personaje-saint-ignucius/1368549661394.jpg][Imagen]]
 * TODO Hacer mas ideas para el brainstorming
 * TODO Incorporar cheatsheet para dar en la charla
-* TODO Hacer guiion para no perder mucho tiempo
+** [[docview:rsc/refcard.pdf::1][PDF - refcard.pdf]]
+** [[file:rsc/SKm6x.png][Imagen]]
+** [[https://github.com/abo-abo/hydra][Hydra - package]]
+* TODO Hacer guion para no perder mucho tiempo
 * TODO Hablar con Pablo, Manuel y Rock y especificar las "demos"
+** Rock
+** Pablo
+** Manuel
+   * Org
 * TODO Editar erratas de las transparencias
-* TODO Email a Invert
+* TODO Email a Invert(ido)
 * TODO Proyeccion de las pantllas
 * TODO Imprimir y pegar los carteles
