@@ -14,5 +14,12 @@
    * Org
 * TODO Editar erratas de las transparencias
 * TODO Email a Invert(ido)
+  SCHEDULED: <2016-04-04 lun>
 * TODO Proyeccion de las pantllas
 * TODO Imprimir y pegar los carteles
+  SCHEDULED: <2016-04-04 lun>
+* TODO Tiempos
+| T. | Temas                          |
+|----+--------------------------------|
+| 10 | Puesta a punto. Descarga.      |
+| 10 | Inicio. Prefacio, imagen Modos |
