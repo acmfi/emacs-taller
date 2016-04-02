@@ -197,7 +197,7 @@ Vamos a empezar desde cero...
 - Instalar uno o varios paquetes
 ** *Y ahora viene la...*
 [[./imagenes/Magic.gif]]
-x
+
 
 https://github.com/magit/magit
 
