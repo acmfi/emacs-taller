@@ -36,6 +36,11 @@
 Todo lo aqui expuesto esta creado usando emacs como herramienta principal (Much
 powerfull)
 [[http://nwidger.github.io/blog/post/making-a-reveal.js-presentation-with-org-reveal/][Tutorial usado para crear esta presentacion]]
+** *Agradecimientos*
+- Pablo Nogueria
+- Manuel Hermenegildo
+- [[https://github.com/rockneurotiko][@rockneurotiko]]
+- Álvaro Iturmendi
 
 * *At first I was like*
 [[./imagenes/EmacsNoConfig.png]]

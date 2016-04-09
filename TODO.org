@@ -15,9 +15,9 @@
 * TODO Editar erratas de las transparencias
 * TODO Email a Invert(ido)
   SCHEDULED: <2016-04-04 lun>
-* TODO Proyeccion de las pantllas
-* TODO Imprimir y pegar los carteles
-  SCHEDULED: <2016-04-04 lun>
+* Proyeccion de las pantllas
+* DONE Imprimir y pegar los carteles
+  CLOSED: [2016-04-09 sáb 15:12] SCHEDULED: <2016-04-04 lun>
 * TODO Tiempos
 | T. | Temas                          |
 |----+--------------------------------|
