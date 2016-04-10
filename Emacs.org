@@ -1,11 +1,13 @@
 #+Title: Charla Emacs
 #+Author: Coyote3007 & Nacho
 #+Email:SexyACM@BestAsocEUW.io
+
 #+LANGUAGE: es
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
 #+CREATOR: Emacs 24.5.1 (Org mode 8.3.2)
 #+LATEX_CLASS_OPTIONS: [a4paper,hidelinks]
+
 #+LATEX_CLASS_OPTIONS: [...,hidelinks]
 
 #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t
@@ -27,10 +29,10 @@
 # #+OPTIONS: reveal_single_file:t
 
 # Read: https://github.com/yjwen/org-reveal/
-# s para modo por
 
 
-* *Prefurcia*
+
+* *+Prefurcia+ Prefacio*
 Todo lo aqui expuesto esta creado usando emacs como herramienta principal (Much
 powerfull)
 [[http://nwidger.github.io/blog/post/making-a-reveal.js-presentation-with-org-reveal/][Tutorial usado para crear esta presentacion]]
@@ -48,8 +50,10 @@ Meh, nada de otro mundo...
 ** *My power increased*
 [[./imagenes/BufferFTW.png]]
 
+
 * *Vamos despacito*
 [[./imagenes/Despacito.jpg]]
+
 
 * *Por qué deberia aprender emacs??*
 Emacs, SublimeText, Vim, Notepad++, Gedit, Nano... \\
@@ -71,6 +75,7 @@ Paquetes importantes actualizados de forma periodica por la comunidad.
 [[./imagenes/FSF.png]]\\
 Si aun asi no has encontrado lo que tu buscas... crealo tu mismo.
 
+
 * *Modos*
 Emmm modos... si... eso me suena
 ** *Que es un modo?*
@@ -91,6 +96,7 @@ dentro de emacs.\\
 ** *Modos menores*
 Un modo menor es una utilidad especifica que activas para cada modo. A
 diferencia de los modos mayores, los modos menores son compatibles entre si.
+
 
 * *Paquetes*
 Emacs ofrece la posibilidad de instalar funcionalidades extra en forma de
@@ -127,20 +133,30 @@ Supongamos que queremos instalar autoindent. Para ello tenemos varias opciones
 - Se recomienda mover a un subdirectorio del path ./emacs.d/
 - Cargar el paquete en el init.el
 
+
 * *Configuracion de emacs*
-Al arrancar emacs carga el archivo /emacs.d/init.el como archivo de
+Al arrancar emacs carga el archivo /.emacs.d/init.el como archivo de
 configuracion. En este archivo se pueden cargar otros archivos de configuracion
 secundarios para poder tenerlo modularizado.
 Para poder recargar la configuracion una vez guardada, se usa el comando M-x
-eval-buffer
+eval-buffer sobre tu init.el
+
 
 * *Paquetes de interes*
+** *Prelude*
+[[https://github.com/bbatsov/prelude]]
+** *Oh-my-emacs*
+[[https://github.com/xiaohanyu/oh-my-emacs]]
+** *Ergoemacs*
+[[http://ergoemacs.github.io/]]
 ** *Org-mode*
 [[http://orgmode.org/]]
 ** *Magit*
 https://github.com/magit/magit
 ** *Autocomplete*
 https://www.emacswiki.org/emacs/AutoComplete
+** *Company*
+[[http://company-mode.github.io/]]
 ** *Helm*
 https://github.com/emacs-helm/helm
 ** *Autoindent*
@@ -162,11 +178,34 @@ https://www.emacswiki.org/emacs/Smex
 ** *Rainbow delimiters*
 https://www.emacswiki.org/emacs/RainbowDelimiters
 
+** *Awesome-emacs*
+[[https://github.com/emacs-tw/awesome-emacs]]
+
+
 * *Taller: Configurar emacs*
+** *A LA PORRA CON TODO*
+#+attr_html: :width 750px
+[[./imagenes/Basura.gif]]
+
+Vamos a empezar desde cero...
+
+** *Pero... por donde?*
 - Crear archivo init.el
+** *Paquetes*
 - Sincronizar emacs con los repositorios de MELPA
+** *esto es feo de narices...*
+- Cambiar el aspecto del entorno
+ + Tema
+ + Fuente
+ + Crear cheatsheet
+** *Mas!*
 - Instalar uno o varios paquetes
-- Configurar todo lo instalado y familiarizarse
+** *Y ahora viene la...*
+[[./imagenes/Magic.gif]]
+
+
+https://github.com/magit/magit
+
 
 * *Muchas gracias por venir*
 ** *C-c C-h*
