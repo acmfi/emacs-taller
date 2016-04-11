@@ -140,10 +140,12 @@ Supongamos que queremos instalar autoindent. Para ello tenemos varias opciones
 
 
 * *Demo*
-**
+** *@Rockneurotiko*
 [[./imagenes/seniorpresidente.jpg]]
 
-**
+** *Pablo Nogueira*
+
+** *Manuel Hermenegildo*
 
 
 * *Configuracion de emacs*
