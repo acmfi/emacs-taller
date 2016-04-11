@@ -1,3 +1,6 @@
+#+Title: Charla Emacs
+#+Author: Coyote3007 & Nacho
+#+Email:SexyACM@BestAsocEUW.io
 
 #+LANGUAGE: es
 #+SELECT_TAGS: export
@@ -68,7 +71,7 @@ MELPA con 2.984 paquetes es el repositorio mas grande de paquetes para
 emacs. Seguido por repositorios como marmalade y savannah
 ** *Una buena comunidad*
 Paquetes importantes actualizados de forma periodica por la comunidad.
-** 
+**
 [[./imagenes/meetup.png]]
 
 http://www.meetup.com/es-ES/Emacs-Madrid/
@@ -137,10 +140,10 @@ Supongamos que queremos instalar autoindent. Para ello tenemos varias opciones
 
 
 * *Demo*
-** 
+**
 [[./imagenes/seniorpresidente.jpg]]
 
-** 
+**
 
 
 * *Configuracion de emacs*
