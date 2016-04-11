@@ -141,7 +141,7 @@ Supongamos que queremos instalar autoindent. Para ello tenemos varias opciones
 
 * *Demo*
 
-** *@Rockneurotiko*
+** *@rcockneurotiko*
 
 [[./imagenes/seniorpresidente.jpg]]
 
