@@ -30,8 +30,6 @@
 
 # Read: https://github.com/yjwen/org-reveal/
 
-
-
 * *+Prefurcia+ Prefacio*
 Todo lo aqui expuesto esta creado usando emacs como herramienta principal (Much
 powerfull)
@@ -42,6 +40,7 @@ powerfull)
 - [[https://github.com/rockneurotiko][@rockneurotiko]]
 - Álvaro Iturmendi
 
+  
 * *At first I was like*
 [[./imagenes/EmacsNoConfig.png]]
 Meh, nada de otro mundo...
