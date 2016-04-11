@@ -1,6 +1,3 @@
-#+Title: Charla Emacs
-#+Author: Coyote3007 & Nacho
-#+Email:SexyACM@BestAsocEUW.io
 
 #+LANGUAGE: es
 #+SELECT_TAGS: export
@@ -71,6 +68,11 @@ MELPA con 2.984 paquetes es el repositorio mas grande de paquetes para
 emacs. Seguido por repositorios como marmalade y savannah
 ** *Una buena comunidad*
 Paquetes importantes actualizados de forma periodica por la comunidad.
+** 
+[[./imagenes/meetup.png]]
+
+http://www.meetup.com/es-ES/Emacs-Madrid/
+
 ** *Si no encuentras una funcionalidad... IMPLEMENTALA!*
 [[./imagenes/FSF.png]]\\
 Si aun asi no has encontrado lo que tu buscas... crealo tu mismo.
@@ -134,6 +136,13 @@ Supongamos que queremos instalar autoindent. Para ello tenemos varias opciones
 - Cargar el paquete en el init.el
 
 
+* *Demo*
+** 
+[[./imagenes/seniorpresidente.jpg]]
+
+** 
+
+
 * *Configuracion de emacs*
 Al arrancar emacs carga el archivo /.emacs.d/init.el como archivo de
 configuracion. En este archivo se pueden cargar otros archivos de configuracion
@@ -191,6 +200,9 @@ Vamos a empezar desde cero...
 
 ** *Pero... por donde?*
 - Crear archivo init.el
+- [[file:rsc/SKm6x.png][CheatSheet]]
+- [[docview:rsc/refcard.pdf::1][PDF - refcard]]
+
 ** *Paquetes*
 - Sincronizar emacs con los repositorios de MELPA
 ** *esto es feo de narices...*

@@ -1,10 +1,11 @@
 * TODO Subir gifs
-* TODO Crear cartel de saint iGNUtius
+* DONE Crear cartel de saint iGNUtius
+  CLOSED: [2016-04-11 lun 12:42]
 [[http://img.irtve.es/imagenes/richard-stallman-ataviado-personaje-saint-ignucius/1368549661394.jpg][Imagen]]
 * TODO Hacer mas ideas para el brainstorming
 * TODO Incorporar cheatsheet para dar en la charla
-** [[docview:rsc/refcard.pdf::1][PDF - refcard.pdf]]
-** [[file:rsc/SKm6x.png][Imagen]]
+** [[docview:rsc/refcard.pdf::1][PDF - refcard.pdf]
+** [[file:rsc/SKm6x.png]Imagen]]
 ** [[https://github.com/abo-abo/hydra][Hydra - package]]
 * TODO Hacer guion para no perder mucho tiempo
 * TODO Hablar con Pablo, Manuel y Rock y especificar las "demos"
