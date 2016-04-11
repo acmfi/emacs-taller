@@ -1,4 +1,4 @@
-#+Title: Charla Emacs
+#+Title: Charla de Vim
 #+Author: Coyote3007 & Nacho
 #+Email:SexyACM@BestAsocEUW.io
 
