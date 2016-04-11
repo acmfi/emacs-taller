@@ -39,6 +39,7 @@ powerfull)
 - Manuel Hermenegildo
 - [[https://github.com/rockneurotiko][@rockneurotiko]]
 - Álvaro Iturmendi
+- Adrián Lorente
 
   
 * *At first I was like*
@@ -140,7 +141,7 @@ Supongamos que queremos instalar autoindent. Para ello tenemos varias opciones
 
 * *Demo*
 
-** *@rcockneurotiko*
+** *@rockneurotiko*
 
 [[./imagenes/seniorpresidente.jpg]]
 
@@ -208,9 +209,14 @@ https://www.emacswiki.org/emacs/RainbowDelimiters
 Vamos a empezar desde cero...
 
 ** *Pero... por donde?*
-- Crear archivo init.el
-- [[file:rsc/SKm6x.png][CheatSheet]]
-- [[docview:rsc/refcard.pdf::1][PDF - refcard]]
+*** *Instálalo*
+ - ~pacman/apt-get/yum [-S | install] emacs~
+ - [[https://ftp.gnu.org/gnu/emacs/windows/emacs-24.5-bin-i686-mingw32.zip][Descarga en Windows]]
+ - [[https://emacsformacosx.com/][Emacs for Mac OS X]]
+*** *Configuración básica*
+ - Crear archivo init.el
+ - [[file:rsc/SKm6x.png][CheatSheet]]
+ - [[docview:rsc/refcard.pdf::1][PDF - refcard]]
 
 ** *Paquetes*
 - Sincronizar emacs con los repositorios de MELPA
